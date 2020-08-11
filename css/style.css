@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+html, body{margin: 0;padding: 0;}
+header, section, article, aside, nav, main, footer{display: block;}
+header:after, section:after, article:after, aside:after, nav:after, main:after, footer:after{content: "";display: block;clear: both;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0;padding: 0;list-style: none;}
+a{text-decoration: none;}
+.clear{clear: both;}
+
+
+/* 박스 정렬 */
+#sub_det{width: 100%;padding: 20px 0;}
+#sub_det .frame{width: 1000px;margin: 0 auto;font-size: 0;}
+#sub_det .frame .det_coffee{display: inline-block;width: 50%;vertical-align: top;height: 500px;padding: 10px;}
+#sub_det .frame .det_coffee .det_img{width: 100%;height: 100%;position: relative;overflow: hidden;}
+#sub_det .frame .det_coffee .det_img img{width: 100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+
+
+/* 제목 */
+#sub_det .frame #det_box{display: inline-block;width: 50%;vertical-align: top;min-height: 500px;padding: 10px;background-color: #ddd;}
+
+#sub_det .frame #det_box .det_tit{padding: 10px 0;}
+#sub_det .frame #det_box .det_tit h2{font-size: 24px;color: #333;}
+#sub_det .frame #det_box .det_tit p{font-size: 20px;color: #555;padding: 10px 0;}
+
+/* 14000원 */
+#sub_det .frame #det_box .det_price{padding: 10px 0;border-bottom: 1px solid #777}
+#sub_det .frame #det_box .det_price h4{font-size: 18px;color: #555;}
+#sub_det .frame #det_box .det_price h4 span{color: #333;font-size: 22px;}
+
+/* 분쇄정도 선택 */
+#sub_det .frame #det_box .form_crush{padding: 20px 0;font-size: 0;}
+#sub_det .frame #det_box .form_crush label{font-size: 18px;color: #555;width: 120px;display: inline-block;vertical-align: middle;}
+#sub_det .frame #det_box .form_crush select{width: calc(100% - 120px);height: 40px;padding: 10px;font-size: 14px;display: inline-block;vertical-align: middle;}
+
+/* 무게선택 */
+#sub_det .frame #det_box .form_gram{padding: 0 0 20px;font-size: 0;}
+#sub_det .frame #det_box .form_gram label{font-size: 18px;color: #555;width: 120px;display: inline-block;vertical-align: middle;}
+#sub_det .frame #det_box .form_gram select{width: calc(100% - 120px);height: 40px;padding: 10px;font-size: 14px;display: inline-block;vertical-align: middle;}
+
+/* 내가 고른 항목들 */
+#sub_det .frame #det_box ul{padding: 10px 0;}
+#sub_det .frame #det_box ul .my_item{background: #bbb;padding: 0 5px;border-bottom: 1px solid #777;}
+#sub_det .frame #det_box ul .my_item .det_count{padding: 20px 0;font-size: 0;}
+#sub_det .frame #det_box ul .my_item .det_count > div{display: inline-block;vertical-align: middle;font-size: 13px;}
+
+/* 1 내가고른항목들 중 원두 */
+#sub_det .frame #det_box ul .my_item .det_count > div.det_count_tit{width: 45%;font-weight: bold;}
+
+/* 2 내가고른항목들 중 카운트갯수 */
+#sub_det .frame #det_box ul .my_item .det_count > div.det_count_bx{border: 1px solid #777;border-radius: 4px;background: #fff;margin: 0 5px;font-size: 0;}
+#sub_det .frame #det_box ul .my_item .det_count > div.det_count_bx a{display: inline-block;width: 30px;height: 25px;font-size: 16px;color: #333;text-align: center;}
+#sub_det .frame #det_box ul .my_item .det_count > div.det_count_bx a:hover{background: #eee;}
+#sub_det .frame #det_box ul .my_item .det_count > div.det_count_bx input{width: 40px;height: 25px;line-height: 25px;border: none;text-align: center;font-size: 16px;outline: none;}
+
+/* 3 내가고른항목들 중 총금액 */
+#sub_det .frame #det_box ul .my_item .det_count > div.det_count_price{width: calc(100% - 350px);text-align: right;font-weight: bold;}
+
+/* 4 내가고른항목들 중 x버튼 */
+#sub_det .frame #det_box ul .my_item .det_count > div.item_del{width: 5%;text-align: right;}
+#sub_det .frame #det_box ul .my_item .det_count > div.item_del span{width: 16px; height: 16px;background: #fff;border-radius: 50%;cursor: pointer;line-height: 1;display: block;text-align: center;margin-left:5px;}
+
+/* 총금액 */
+#sub_det .frame #det_box .det_total_price{padding: 20px 0;}
+#sub_det .frame #det_box .det_total_price:after{content: "";display: block;clear: both;}
+#sub_det .frame #det_box .det_total_price .total_price_tit{float: left; font-size: 20px;font-weight: bold;}
+#sub_det .frame #det_box .det_total_price .total_price_num{float: right;font-size: 26px;color: #ee3535;font-weight: bold;}
+
+
+
+
+
+

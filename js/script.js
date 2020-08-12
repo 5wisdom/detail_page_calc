@@ -3,6 +3,7 @@ $(document).ready(function(){
         var $sel = $(this).val();
         $(".result_opt1").text($sel);
     });
+
     $("#gram").change(function(){
         var $sel = $(this).val();
         $(".result_opt2").text($sel);
@@ -20,8 +21,6 @@ $(document).ready(function(){
     var $each_total_price = []; //각 아이템별로 최종값(배열데이터)
 
     $(".total_price_num span").text($total); //초기의 총금액
-
-
 
     var $each_box = `
     <li class="my_item">
@@ -105,7 +104,7 @@ $(document).ready(function(){
 
         //배열 pop push shift unshift
 
-        $each_total_price.push($present_price);
+        $each_total_price.push($present_price); //push 배열끝에 삽입
         console.log($each_total_price); //옵션가 포함한 가격을 배열 데이터로 저장(변동)
 
         $each_calc_price.push($present_price);
